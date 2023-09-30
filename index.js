@@ -29,7 +29,7 @@ const BD_PASSWORD = process.env.BDPASSWORD
 
 //entregar uma porta
 
-mongoose.connect( "mongodb+srv://bomgustavo10:dPRFsr3TPlLQ4mGF@bancomongodb.czthnei.mongodb.net/BancoMongoDB?retryWrites=true&w=majority")
+mongoose.connect( "mongodb+srv://BDUSER:BD_PASSWORD@bancomongodb.czthnei.mongodb.net/BancoMongoDB?retryWrites=true&w=majority")
     .then(() => {
         console.log('conectado ao mongoDB')
         app.listen('3000')
